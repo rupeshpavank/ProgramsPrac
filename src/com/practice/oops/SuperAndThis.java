@@ -5,10 +5,12 @@ package com.practice.oops;
  * This is used to invoke the current class method
  * This is used to invoke the current class constructor. Call should be your first statement
  * This is used as a return statement for a method. The return type is class type
+ * The this keyword can also be passed as an argument in the method.
  * ******************************
  * 
  * Super is used to refer the immediate parent class method
  * Super is used to invoke the immediate parent class instance variable 
+ * super is used to refer the immediate parent class constructor
  * 
  */
 

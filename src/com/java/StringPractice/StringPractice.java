@@ -11,10 +11,8 @@ public class StringPractice {
 		 * The String objects are cached in the String pool, and it makes the String immutable. 
 		 * 
 		 * All the string objects were cached in a string pool memory 
-		 * The String obejctys will be accessed by multiple clients
-		 * If one Clinet changes the value all other clients will be efffected
-		 * 
-		 * 
+		 * The String objects will be accessed by multiple clients
+		 * If one Client changes the value all other clients will be effected
 		 * If you want to represent any object as a string, toString() method comes into existence.
 		 * 
 		 * 
@@ -241,13 +239,15 @@ public class StringPractice {
 		/*
 		 * String string1 = "Great responsibility"; int count;
 		 * 
-		 * //Converts given string into character array char string[] =
+		 * //Converts given string into character array 
+		 * char string[] =
 		 * string1.toCharArray();
 		 * 
 		 * 
 		 * 
-		 * System.out.println("Duplicate characters in a given string: "); //Counts each
-		 * character present in the string for(int i = 0; i <string.length; i++) { count
+		 * System.out.println("Duplicate characters in a given string: "); 
+		 * //Counts each character present in the string 
+		 * for(int i = 0; i <string.length; i++) { count
 		 * = 1; for(int j = i+1; j <string.length; j++) { if(string[i] == string[j] &&
 		 * string[i] != ' ') { count++; //Set string[j] to 0 to avoid printing visited
 		 * character string[j] = '0'; } } //A character is considered as duplicate if
@@ -255,6 +255,19 @@ public class StringPractice {
 		 * System.out.println(string[i]); }
 		 * 
 		 */
+		
+		
+		String str="Rupesh";
+		String rev="";
+		
+		for(int i=str.length()-1;i>=0;i--) {
+			
+			rev=rev+str.charAt(i);
+
+		}
+		
+		System.out.println(rev);
+		
 		
 	}
 

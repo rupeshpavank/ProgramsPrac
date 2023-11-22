@@ -16,8 +16,8 @@ public class Febonocci {
 		for(int i=0;i<=10;i++) {
 			
 			sum=a+b;
-			b=a;
-			a=sum;
+			a=b;
+			b=sum;
 			
 			System.out.print(" "+sum);
 			

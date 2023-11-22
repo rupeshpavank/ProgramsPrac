@@ -7,17 +7,17 @@ public class PalindromeNumber {
 
 	public static void main(String[] args) {
 		
-		int i=543;
+		int i=343;
 		
 		int res=i;
 		
 		int sum=0;
 		
-		int n=10;
+	
 				
 		while(i>0) {
 			
-			sum=sum*10+i%n;
+			sum=sum*10+i%10;
 			
 			i=i/10;
 		}

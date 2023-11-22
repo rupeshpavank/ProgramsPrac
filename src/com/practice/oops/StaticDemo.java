@@ -12,21 +12,35 @@ package com.practice.oops;
 
 public class StaticDemo {
 	
-	static int count=0;
+	static int count=20;
 	
 	int test=10;
-	
+
+
 	public void sum() {
 		
 		count=count+1;
+		
+		test=test+1;
+		
+	}
+	
+	public static void testDisplay() {
+		
+		/* test=11; */ //Static methods can access only static variables not non static ones
+		count=30;
 	}
 	
 	public void display() {
 		
+		
 		System.out.println(count);
+		System.out.println("********Non Static***"+test);
 	}
 	
 	public static void main(String args[]) {
+		
+	
 		
 		StaticDemo obj=new StaticDemo();
 		
@@ -37,6 +51,8 @@ public class StaticDemo {
 		obj.sum();
 		
 		obj.display();
+		
+		StaticDemo.testDisplay();
 
 		
 	obj1.sum();

@@ -1,12 +1,19 @@
 package com.practice.exceptionHandeling;
 
+import java.io.IOException;
+
 public class ThrowExceptionDemo {
 	
-	public void validateAge(int a) {
+	public void validateAge(int a)  {
 		
 		if(a<18) {
+			try {
+				throw new IOException("Person is not eligible to Vote");
+			}
 			
-			throw new ArithmeticException("Person is not eligible to Vote");
+			catch (Exception e) {
+				System.out.println("Exception handeled");
+			}
 		}
 		else
 		{
@@ -17,9 +24,21 @@ public class ThrowExceptionDemo {
 	
 	public static void main(String args[]) {
 		
+		/*
+		 * String s=null;
+		 * 
+		 * s.substring(0);
+		 */
+		/*
+		 * Object s1=null;
+		 * 
+		 * s1.hashCode();
+		 */
+		
 		ThrowExceptionDemo obj=new ThrowExceptionDemo();
 		
-		obj.validateAge(10);
+		obj.validateAge(2);
+		
 		
 	}
 	

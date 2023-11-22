@@ -9,6 +9,9 @@ public class HashSetPractice {
 
 	public static void main(String[] args) {
 		
+		HashSet<String> hs=new HashSet<String>();
+		
+		
 		Set<String> ls=new LinkedHashSet<String>();
 		
 		ls.add("Rupesh");
